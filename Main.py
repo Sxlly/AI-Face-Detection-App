@@ -50,13 +50,9 @@ while True:
         for (x, y, width, height) in videoFaceCoordinates: #<--- Loop through full list of coordinates and draw a rectangle around face dimensions all times a face is detected
             cv2.rectangle(currentFrame, (x, y), (x+width,y+height), (randrange(256), randrange(256), randrange(256)), 3)  #<--- (img, (x, y), (x+w, y+w), (B, G, R), BorderWidth)
                                                                 #^^^ RGB value for random colours
-                                                                
+
     except Exception as errorDesc: #<--- get description of error flagged
         print("Error Flaged: " + errorDesc)
-
-
-
-
 
     #***display in video view current frame
     cv2.imshow('AI Face Detector', currentFrame)
