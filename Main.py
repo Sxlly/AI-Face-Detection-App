@@ -36,8 +36,8 @@ while True:
 
     #*** Draw Rectangle around detected face
     for (x, y, width, height) in faceCoordinates: #<--- Loop through full list of coordinates and draw a rectangle around face dimensions all times a face is detected
-        cv2.rectangle(initImg, (x, y), (x+width,y+height), (randrange(256), randrange(256), randrange(256)),3)  #<--- (img, (x, y), (x+w, y+w), (B, G, R), BorderWidth)
-                                                             #^^^ RGB value for pure green colour
+        cv2.rectangle(currentFrame, (x, y), (x+width,y+height), (randrange(256), randrange(256), randrange(256)),3)  #<--- (img, (x, y), (x+w, y+w), (B, G, R), BorderWidth)
+                                                             #^^^ RGB value for random colours
 
 
 
