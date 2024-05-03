@@ -1,5 +1,6 @@
 import math
 import cv2
+from random import *
 
 
 #*** pre made dataset import
@@ -32,6 +33,12 @@ while True:
 
     posFrameRead, currentFrame = initVideo.read() #<--- Read current video frames (boolean T/F, current video frame value)
     grayscaleFrame = cv2.cvtColor(currentFrame, cv2.COLOR_BGR2GRAY) #<---- second parameter sets img through RGB to gray
+
+    #*** Draw Rectangle around detected face
+    for (x, y, width, height) in faceCoordinates: #<--- Loop through full list of coordinates and draw a rectangle around face dimensions all times a face is detected
+        cv2.rectangle(initImg, (x, y), (x+width,y+height), (randrange(256), randrange(256), randrange(256)),3)  #<--- (img, (x, y), (x+w, y+w), (B, G, R), BorderWidth)
+                                                             #^^^ RGB value for pure green colour
+
 
 
 
