@@ -9,7 +9,7 @@ preTrainedFaceData = cv2.CascadeClassifier('haarcascade_frontalface_default.xml'
 #*** choose image to detect face(s) inside
 initImg = cv2.imread('RedCarpetFace1.jpg')
 #*** choose a video to detect face(s) inside
-
+initVideo = cv2.VideoCapture("David Guetta & OneRepublic - I Don't Wanna Wait (Official Video) (720p).mp4")
 
 
 #*** for opencv to use image correctly mustfirst convert to grayscale
