@@ -19,7 +19,8 @@ print(faceCoordinates)#<--- prints coordinates of facial borders to console (ter
 
 
 #*** Draw Rectangle around detected face
-cv2.rectangle(initImg, (68,178), (68+334,178+334), (0, 255, 0), 3)  #<--- (img, (x, y), (x+w, y+w), (B, G, R), BorderWidth)
+(x,y,width,height) = faceCoordinates[0]
+cv2.rectangle(initImg, (x, y), (x+width,y+height), (0, 255, 0), 3)  #<--- (img, (x, y), (x+w, y+w), (B, G, R), BorderWidth)
 
 
 
