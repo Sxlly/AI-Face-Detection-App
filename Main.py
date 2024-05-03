@@ -16,7 +16,8 @@ gsImg = cv2.cvtColor(initImg, cv2.COLOR_BGR2GRAY) #<---- second parameter sets i
 faceCoordinates = preTrainedFaceData.detectMultiScale(gsImg) #<--- the classifier trained the "preTrainedFaceData" variable to detect faces accuratley due to funneling it multiple positive and negative data sets (imgs with faces and without)
                                     #^^^ multiscale method allows images to be various dimensions (scales)
 
-
+#*** Draw Rectangle around detected face
+#cv2.rectangle()
 
 
 
