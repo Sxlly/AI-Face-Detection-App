@@ -2,11 +2,11 @@ import math
 import cv2
 
 
-
+#*** pre made dataset import
 preTrainedFaceData = cv2.CascadeClassifier('enter xml machine learning file') #<---- load pre-trained dataset on front facing self portraits 
 
 
-#*** Choose image to detect a face inside
+#*** choose image to detect a face inside
 initImg = cv2.imread('filename.png/jpg')
 
 #*** for opencv to use image correctly mustfirst convert to grayscale
