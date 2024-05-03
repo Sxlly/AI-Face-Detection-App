@@ -6,8 +6,11 @@ import cv2
 preTrainedFaceData = cv2.CascadeClassifier('haarcascade_frontalface_default.xml') #<---- load pre-trained dataset on front facing self portraits 
 
 
-#*** choose image to detect a face inside
+#*** choose image to detect face(s) inside
 initImg = cv2.imread('RedCarpetFace1.jpg')
+#*** choose a video to detect face(s) inside
+
+
 
 #*** for opencv to use image correctly mustfirst convert to grayscale
 gsImg = cv2.cvtColor(initImg, cv2.COLOR_BGR2GRAY) #<---- second parameter sets img background to gray
